@@ -36,7 +36,12 @@ def header(active=""):
     ]
     nav_items = []
     for href, label in links:
-        cls = ' class="nav-active"' if active == href else ""
+        classes = []
+        if active == href:
+            classes.append("nav-active")
+        if href == "contact.html":
+            classes.append("nav-contact")
+        cls = ' class="{}"'.format(" ".join(classes)) if classes else ""
         nav_items.append('<a{cls} href="{href}">{label}</a>'.format(cls=cls, href=href, label=label))
     return '''<header class="site-header">
   <div class="header-inner">

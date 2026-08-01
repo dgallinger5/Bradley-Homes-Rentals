@@ -316,11 +316,13 @@ textarea{min-height:140px;}
   .map-box iframe{height:240px;}
   .cta-strip-inner{flex-direction:column;text-align:center;}
   .cta-strip-actions{justify-content:center;}
-  .filter-panel{padding:14px;}
-  .filter-bar{gap:12px;}
-  .filter-group{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch;}
-  .filter-label{flex:0 0 auto;}
-  .filter-pill{flex:0 0 auto;padding:10px 14px;}
+  .meet-inner{grid-template-columns:1fr;gap:24px;text-align:center;}
+  .meet-photo{max-width:360px;margin:0 auto;}
+  .meet-text h2{text-align:center;}
+  .filter-bar{gap:12px;flex-direction:column;align-items:flex-start;}
+  .filter-group{flex-wrap:wrap;overflow-x:visible;width:100%;}
+  .filter-label{flex:0 0 100%;}
+  .filter-pill{flex:0 1 auto;padding:10px 14px;}
 }
 @media(max-width:600px){
   body{font-size:17px;}
