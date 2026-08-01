@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Sample home illustration">
+  <rect width="400" height="300" fill="#dde3e8"/>
+  <rect y="210" width="400" height="90" fill="#aeb9a6"/>
+  <path d="M120 210 L200 140 L280 210 Z" fill="#5a6b73"/>
+  <rect x="140" y="190" width="120" height="80" fill="#f3efe6"/>
+  <rect x="185" y="222" width="30" height="48" fill="#5a4632"/>
+  <rect x="155" y="200" width="28" height="28" fill="#cfe3ea"/>
+  <rect x="217" y="200" width="28" height="28" fill="#cfe3ea"/>
+  <rect x="100" y="225" width="20" height="65" fill="#8a977f"/>
+  <rect x="290" y="225" width="20" height="65" fill="#8a977f"/>
+</svg>

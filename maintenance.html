@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maintenance Request — Bradley Homes &amp; Rentals</title>
+<meta name="description" content="Submit a maintenance or repair request to Bradley Homes & Rentals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="assets/logo.svg">
+</head>
+<body class="theme-maintenance">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="Bradley Homes & Rentals logo">
+      <span>Bradley Homes &amp; Rentals</span>
+    </a>
+    <nav class="nav-links">
+      <a href="rentals.html">Rentals</a>
+      <a href="sale.html">Homes for Sale</a>
+      <a href="maintenance.html" class="nav-active">Maintenance</a>
+      <a href="about.html">About</a>
+      <a class="nav-contact" href="contact.html">Contact</a>
+    </nav>
+    <a class="header-phone" href="tel:+19895550100">(989) 555-0100</a>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container" style="max-width:760px;">
+    <h2>Maintenance Request</h2>
+    <p class="lead">Something need fixing? Let us know and we'll take care of it.</p>
+
+    <div class="maint-emergency">
+      <h3>&#9888; Medical, Fire, or Life-Threatening Emergency</h3>
+      <p>If there is immediate danger to a person — fire, gas leak, medical emergency, or any life-threatening situation — <strong>call 911 first</strong>. Bill and Brenda are not an emergency response service.</p>
+      <p>For everything else, see our response guidance below.</p>
+    </div>
+
+    <div class="maint-emergency" style="background:#eef3f4;border-color:var(--primary);">
+      <h3>Urgent but Not Life-Threatening</h3>
+      <p>No heat in winter, flooding, or a major leak? Call Bill &amp; Brenda directly and we'll respond as quickly as possible.</p>
+      <p class="maint-emerg-phone"><a href="tel:+19895550100">(989) 555-0100</a></p>
+      <p class="maint-response">Response time: emergencies same day &middot; standard requests within 2&ndash;3 business days.</p>
+    </div>
+
+    <form onsubmit="event.preventDefault();alert('Demo only — this form will connect to email when the site launches.');">
+      <div class="field">
+        <label for="m-name">Your name</label>
+        <input id="m-name" type="text" placeholder="Full name">
+      </div>
+      <div class="field">
+        <label for="m-addr">Property address</label>
+        <input id="m-addr" type="text" placeholder="Where is the issue?">
+      </div>
+      <div class="field">
+        <label for="m-contact">Phone or email</label>
+        <input id="m-contact" type="text" placeholder="Best way to reach you">
+      </div>
+      <div class="field">
+        <label for="m-desc">What needs fixing?</label>
+        <textarea id="m-desc" placeholder="Describe the problem"></textarea>
+      </div>
+      <div class="field">
+        <label for="m-photo">Photo (optional &mdash; helps us diagnose faster)</label>
+        <input id="m-photo" type="file" accept="image/*" capture="environment">
+      </div>
+      <div class="field">
+        <label for="m-urgency">How urgent?</label>
+        <select id="m-urgency">
+          <option>Not urgent — whenever</option>
+          <option>Within a week</option>
+          <option>Urgent — no heat/flooding</option>
+        </select>
+      </div>
+      <button class="btn" type="submit">Send Request</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <p class="footer-name"><strong>Bradley Homes &amp; Rentals</strong></p>
+      <p>Local, family-owned. Serving Evart and the surrounding Central Michigan communities.</p>
+      <p class="footer-phone"><a href="tel:+19895550100">(989) 555-0100</a></p>
+      <p class="footer-email"><a href="mailto:bill@bradleyhomes.example">bill@bradleyhomes.example</a></p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Explore</p>
+      <ul class="footer-nav">
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="sale.html">Homes for Sale</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Connect</p>
+      <p class="footer-social">
+        <a href="https://facebook.com/" target="_blank" rel="noopener" class="soc-link"><svg class="soc-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.5-3.91 3.78-3.91 1.1 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>Facebook</a>
+      </p>
+      <p class="footer-fair">Committed to fair housing. We do not discriminate on the basis of race, color, religion, sex, national origin, familial status, disability, or any other protected class.</p>
+    </div>
+  </div>
+  <p class="footer-copy">&copy; 2026 Bradley Homes &amp; Rentals. All rights reserved.</p>
+</footer>
+</body>
+</html>

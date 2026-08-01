@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 360" role="img" aria-label="Placeholder photo of Bill and Brenda">
+  <rect width="400" height="360" fill="#e9e6df"/>
+  <circle cx="160" cy="140" r="46" fill="#c9c2b2"/>
+  <path d="M70 340 Q160 230 250 340 Z" fill="#c9c2b2"/>
+  <circle cx="250" cy="150" r="40" fill="#bcb5a4"/>
+  <path d="M175 340 Q250 245 325 340 Z" fill="#bcb5a4"/>
+  <text x="200" y="352" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="16" fill="#7a7466">Photo of Bill &amp; Brenda</text>
+</svg>
