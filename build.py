@@ -19,9 +19,9 @@ import urllib.parse
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CSV_PATH = os.path.join(ROOT, "listings.csv")
-EMAIL = "bill@bradleyhomes.example"
-PHONE_DISPLAY = "(989) 555-0100"
-PHONE_TEL = "+19895550100"
+EMAIL = "wbradley58@sbcglobal.net"
+PHONE_DISPLAY = "(231) 920-6168"
+PHONE_TEL = "+12319206168"
 FORMSPREE = "https://formspree.io/f/REPLACE_ME"
 
 PREVIEW_BANNER = ''
@@ -30,7 +30,7 @@ def header(active=""):
     links = [
         ("rentals.html", "Rentals"),
         ("sale.html", "Homes for Sale"),
-        ("maintenance.html", "Maintenance"),
+        ("we-buy-houses.html", "We Buy Houses"),
         ("about.html", "About"),
         ("contact.html", "Contact"),
     ]
@@ -70,7 +70,7 @@ FOOTER = '''
       <ul class="footer-nav">
         <li><a href="rentals.html">Rentals</a></li>
         <li><a href="sale.html">Homes for Sale</a></li>
-        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="we-buy-houses.html">We Buy Houses</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -601,9 +601,9 @@ def home_page(all_listings):
         <p>We live here, work here, and care about the people who rent from us. You're a neighbor, not a number.</p>
       </div>
       <div class="why-item">
-        <span class="why-icon">&#128295;</span>
-        <h3>Fast, Fair Repairs</h3>
-        <p>Something break? Tell us and we fix it &mdash; no runaround, no waiting weeks. Use our maintenance request anytime.</p>
+        <span class="why-icon">&#128176;</span>
+        <h3>We Buy Houses</h3>
+        <p>Thinking of selling? Get a fair, no-pressure cash offer &mdash; no listings, no waiting.</p>
       </div>
       <div class="why-item">
         <span class="why-icon">&#128176;</span>
@@ -687,9 +687,9 @@ def home_page(all_listings):
         <span class="cta-text"><h3>Buy a Home</h3><p>See houses for sale near you.</p></span>
         <span class="cta-arrow">&#8594;</span>
       </a>
-      <a class="cta-banner alt2" href="maintenance.html">
-        <span class="cta-icon">&#128295;</span>
-        <span class="cta-text"><h3>Request Maintenance</h3><p>Tenants: submit a repair request.</p></span>
+      <a class="cta-banner alt2" href="we-buy-houses.html">
+        <span class="cta-icon">&#128176;</span>
+        <span class="cta-text"><h3>We Buy Houses</h3><p>Get a fair cash offer on your home.</p></span>
         <span class="cta-arrow">&#8594;</span>
       </a>
     </div>

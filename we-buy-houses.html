@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — Bradley Homes &amp; Rentals</title>
-<meta name="description" content="Contact Bill & Brenda Bradley — Bradley Homes & Rentals, Evart, Michigan.">
+<title>We Buy Houses — Bradley Homes &amp; Rentals</title>
+<meta name="description" content="We buy houses in Evart and surrounding Central Michigan. Get a fair, no-pressure cash offer from Bill & Brenda Bradley.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" href="assets/logo.svg">
 </head>
-<body class="theme-contact">
+<body class="theme-buy">
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html">
@@ -21,9 +21,9 @@
     <nav class="nav-links">
       <a href="rentals.html">Rentals</a>
       <a href="sale.html">Homes for Sale</a>
-      <a href="we-buy-houses.html">We Buy Houses</a>
+      <a class="nav-active" href="we-buy-houses.html">We Buy Houses</a>
       <a href="about.html">About</a>
-      <a class="nav-contact nav-active" href="contact.html">Contact</a>
+      <a class="nav-contact" href="contact.html">Contact</a>
     </nav>
     <a class="header-phone" href="tel:+12319206168">(231) 920-6168</a>
   </div>
@@ -31,12 +31,14 @@
 
 <section class="section">
   <div class="container">
-    <h2>Get in Touch</h2>
-    <p class="lead">Questions about a rental, a home for sale, or maintenance? Reach out — a real person will get back to you.</p>
+    <h2>We Buy Houses</h2>
+    <p class="lead">Thinking about selling? Bill &amp; Brenda make it simple &mdash; a fair cash offer, no listings, no repairs, no waiting.</p>
+
     <div class="contact-phone-big">
       <a href="tel:+12319206168">(231) 920-6168</a>
-      <p class="contact-response">We typically respond within one business day.</p>
+      <p class="contact-response">Call or text anytime. We'll talk it through, no pressure.</p>
     </div>
+
     <div class="info-grid" style="margin-bottom:32px;">
       <div class="info-box">
         <h3>Phone</h3>
@@ -47,29 +49,53 @@
         <p><a href="mailto:wbradley58@sbcglobal.net">wbradley58@sbcglobal.net</a></p>
       </div>
       <div class="info-box">
-        <h3>Office Hours</h3>
-        <p>Mon&ndash;Fri &middot; 9:00 AM &ndash; 5:00 PM</p>
+        <h3>How It Works</h3>
+        <p>Reach out &middot; Get an offer &middot; Close on your timeline</p>
+      </div>
+    </div>
+
+    <h3 style="text-align:center;margin-bottom:12px;">Why Sell to Us?</h3>
+    <div class="why-grid" style="margin-bottom:36px;">
+      <div class="why-item">
+        <span class="why-icon">&#9201;</span>
+        <h3>No Waiting</h3>
+        <p>Skip the months of showings and uncertain buyers. Get a straight answer fast.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">&#127968;</span>
+        <h3>As-Is</h3>
+        <p>No repairs, no upgrades, no cleaning required. We buy houses in any condition.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">&#128176;</span>
+        <h3>Fair Cash Offer</h3>
+        <p>A honest offer based on your home's real value &mdash; no lowball games.</p>
+      </div>
+      <div class="why-item">
+        <span class="why-icon">&#129309;</span>
+        <h3>Local &amp; Family-Owned</h3>
+        <p>We're your Evart neighbors. You deal with real people, not a distant corporation.</p>
       </div>
     </div>
 
     <form onsubmit="event.preventDefault();alert('Demo only — this form will connect to email when the site launches.');" style="max-width:640px;">
       <div class="field">
-        <label for="c-name">Your name</label>
-        <input id="c-name" type="text" placeholder="Full name">
+        <label for="b-name">Your name</label>
+        <input id="b-name" type="text" placeholder="Full name">
       </div>
       <div class="field">
-        <label for="c-email">Email</label>
-        <input id="c-email" type="email" placeholder="you@example.com">
+        <label for="b-address">Property address</label>
+        <input id="b-address" type="text" placeholder="Street, city">
       </div>
       <div class="field">
-        <label for="c-phone">Phone (optional)</label>
-        <input id="c-phone" type="text" placeholder="(231) 920-6168">
+        <label for="b-phone">Phone</label>
+        <input id="b-phone" type="text" placeholder="(231) 920-6168">
       </div>
       <div class="field">
-        <label for="c-msg">Message</label>
-        <textarea id="c-msg" placeholder="How can we help?"></textarea>
+        <label for="b-msg">Anything we should know? (optional)</label>
+        <textarea id="b-msg" placeholder="Condition, timeline, questions..."></textarea>
       </div>
-      <button class="btn" type="submit">Send Message</button>
+      <button class="btn" type="submit">Request a Cash Offer</button>
     </form>
   </div>
 </section>
