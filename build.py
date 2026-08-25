@@ -31,6 +31,7 @@ def header(active=""):
         ("rentals.html", "Rentals"),
         ("sale.html", "Homes for Sale"),
         ("we-buy-houses.html", "We Buy Houses"),
+        ("apply.html", "Apply"),
         ("about.html", "About"),
         ("contact.html", "Contact"),
     ]
@@ -71,6 +72,7 @@ FOOTER = '''
         <li><a href="rentals.html">Rentals</a></li>
         <li><a href="sale.html">Homes for Sale</a></li>
         <li><a href="we-buy-houses.html">We Buy Houses</a></li>
+        <li><a href="apply.html">Apply</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -95,6 +97,7 @@ CONTACT_CTA = '''
     </div>
     <div class="cta-strip-actions">
       <a class="btn btn-light" href="tel:{tel}">{phone}</a>
+      <a class="btn btn-outline-light" href="apply.html">Apply for a Rental</a>
       <a class="btn btn-outline-light" href="contact.html">Contact Us</a>
     </div>
   </div>

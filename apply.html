@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rental Application — Bradley Homes &amp; Rentals</title>
+<meta name="description" content="Apply to rent a home from Bradley Homes & Rentals, Evart, Michigan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="assets/logo.svg">
+</head>
+<body class="theme-apply">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="Bradley Homes & Rentals logo">
+      <span>Bradley Homes &amp; Rentals</span>
+    </a>
+    <nav class="nav-links">
+      <a href="rentals.html">Rentals</a>
+      <a href="sale.html">Homes for Sale</a>
+      <a href="we-buy-houses.html">We Buy Houses</a>
+      <a class="nav-active" href="apply.html">Apply</a>
+      <a href="about.html">About</a>
+      <a class="nav-contact" href="contact.html">Contact</a>
+    </nav>
+    <a class="header-phone" href="tel:+12319206168">(231) 920-6168</a>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2>Rental Application</h2>
+    <p class="lead">Each person 18 or older must complete this application. Fill it out and we'll get back to you. For your security, sensitive ID numbers are provided in person.</p>
+
+    <div class="note">
+      <strong>Before you submit:</strong> This form sends your information to Bradley Homes &amp; Rentals.
+      Please provide your <strong>Social Security Number</strong> and <strong>Driver's License</strong>
+      in person or at your showing &mdash; do not type them here.
+    </div>
+
+    <form action="https://formspree.io/f/REPLACE_ME" method="POST">
+      <input type="hidden" name="_subject" value="New Rental Application — Bradley Homes">
+      <input type="hidden" name="_replyto" value="">
+
+      <fieldset>
+        <legend>Property &amp; Dates</legend>
+        <div class="form-row">
+          <div class="field">
+            <label for="move-in">Anticipated move-in date</label>
+            <input id="move-in" type="date" name="anticipated_move_in">
+          </div>
+          <div class="field">
+            <label for="property">Address you're interested in</label>
+            <input id="property" type="text" name="property_interest" placeholder="e.g. 123 Main St, or 'any 2-bed'">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Applicant</legend>
+        <div class="field">
+          <label for="a-name">Full name</label>
+          <input id="a-name" type="text" name="applicant_name" required>
+        </div>
+        <div class="field">
+          <label for="a-addr">Present address</label>
+          <input id="a-addr" type="text" name="applicant_address" required>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="a-phone">Telephone (home/cell)</label>
+            <input id="a-phone" type="tel" name="applicant_phone" required>
+          </div>
+          <div class="field">
+            <label for="a-email">Email</label>
+            <input id="a-email" type="email" name="applicant_email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="a-dob">Date of birth</label>
+            <input id="a-dob" type="date" name="applicant_dob">
+          </div>
+          <div class="field">
+            <label for="a-ssn">Social Security #</label>
+            <input id="a-ssn" type="text" name="applicant_ssn" placeholder="Provide in person" disabled>
+            <p class="inline-note">Provide in person or at your showing &mdash; do not enter online.</p>
+          </div>
+          <div class="field">
+            <label for="a-dl">Driver's License</label>
+            <input id="a-dl" type="text" name="applicant_dl" placeholder="Provide in person" disabled>
+            <p class="inline-note">Provide in person or at your showing &mdash; do not enter online.</p>
+          </div>
+        </div>
+
+        <h3 style="margin:18px 0 6px;">Current Employment</h3>
+        <div class="field">
+          <label for="a-emp">Name of present employer</label>
+          <input id="a-emp" type="text" name="applicant_employer">
+        </div>
+        <div class="field">
+          <label for="a-empaddr">Employer address</label>
+          <input id="a-empaddr" type="text" name="applicant_employer_address">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="a-pos">Position</label>
+            <input id="a-pos" type="text" name="applicant_position">
+          </div>
+          <div class="field">
+            <label for="a-start">Date started</label>
+            <input id="a-start" type="date" name="applicant_date_started">
+          </div>
+          <div class="field">
+            <label for="a-income">Monthly income</label>
+            <input id="a-income" type="text" name="applicant_monthly_income" placeholder="$">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="a-sup">Supervisor's name</label>
+            <input id="a-sup" type="text" name="applicant_supervisor">
+          </div>
+          <div class="field">
+            <label for="a-supph">Supervisor's phone</label>
+            <input id="a-supph" type="tel" name="applicant_supervisor_phone">
+          </div>
+        </div>
+
+        <h3 style="margin:18px 0 6px;">Previous Employment</h3>
+        <div class="field">
+          <label for="a-pemp">Name of previous employer</label>
+          <input id="a-pemp" type="text" name="applicant_prev_employer">
+        </div>
+        <div class="field">
+          <label for="a-pempaddr">Previous employer address</label>
+          <input id="a-pempaddr" type="text" name="applicant_prev_employer_address">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="a-ppos">Position</label>
+            <input id="a-ppos" type="text" name="applicant_prev_position">
+          </div>
+          <div class="field">
+            <label for="a-pstart">Date started</label>
+            <input id="a-pstart" type="date" name="applicant_prev_date_started">
+          </div>
+          <div class="field">
+            <label for="a-pincome">Monthly income</label>
+            <input id="a-pincome" type="text" name="applicant_prev_monthly_income" placeholder="$">
+          </div>
+        </div>
+
+        <h3 style="margin:18px 0 6px;">Other Sources of Income</h3>
+        <div class="check-group">
+          <label><input type="checkbox" name="income_childsupport" value="yes"> Child Support</label>
+          <label><input type="checkbox" name="income_alimony" value="yes"> Alimony</label>
+          <label><input type="checkbox" name="income_socialsecurity" value="yes"> Social Security</label>
+          <label><input type="checkbox" name="income_disability" value="yes"> Disability Benefits</label>
+          <label><input type="checkbox" name="income_publicassistance" value="yes"> Public Assistance</label>
+          <label><input type="checkbox" name="income_other" value="yes"> Other</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Co-Applicant</legend>
+        <div class="field">
+          <label for="c-name">Full name</label>
+          <input id="c-name" type="text" name="coapplicant_name">
+        </div>
+        <div class="field">
+          <label for="c-addr">Present address</label>
+          <input id="c-addr" type="text" name="coapplicant_address">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="c-phone">Telephone (home/cell)</label>
+            <input id="c-phone" type="tel" name="coapplicant_phone">
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input id="c-email" type="email" name="coapplicant_email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="c-dob">Date of birth</label>
+            <input id="c-dob" type="date" name="coapplicant_dob">
+          </div>
+          <div class="field">
+            <label for="c-ssn">Social Security #</label>
+            <input id="c-ssn" type="text" name="coapplicant_ssn" placeholder="Provide in person" disabled>
+          </div>
+          <div class="field">
+            <label for="c-dl">Driver's License</label>
+            <input id="c-dl" type="text" name="coapplicant_dl" placeholder="Provide in person" disabled>
+          </div>
+        </div>
+        <div class="field">
+          <label for="c-emp">Name of present employer</label>
+          <input id="c-emp" type="text" name="coapplicant_employer">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="c-pos">Position</label>
+            <input id="c-pos" type="text" name="coapplicant_position">
+          </div>
+          <div class="field">
+            <label for="c-start">Date started</label>
+            <input id="c-start" type="date" name="coapplicant_date_started">
+          </div>
+          <div class="field">
+            <label for="c-income">Monthly income</label>
+            <input id="c-income" type="text" name="coapplicant_monthly_income" placeholder="$">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Occupants</legend>
+        <p class="inline-note">List all occupants (name and relationship to applicant).</p>
+        <div class="occ-row"><input type="text" name="occupant_1_name" placeholder="Full name"><input type="text" name="occupant_1_rel" placeholder="Relationship"></div>
+        <div class="occ-row"><input type="text" name="occupant_2_name" placeholder="Full name"><input type="text" name="occupant_2_rel" placeholder="Relationship"></div>
+        <div class="occ-row"><input type="text" name="occupant_3_name" placeholder="Full name"><input type="text" name="occupant_3_rel" placeholder="Relationship"></div>
+        <div class="occ-row"><input type="text" name="occupant_4_name" placeholder="Full name"><input type="text" name="occupant_4_rel" placeholder="Relationship"></div>
+        <div class="occ-row"><input type="text" name="occupant_5_name" placeholder="Full name"><input type="text" name="occupant_5_rel" placeholder="Relationship"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pets</legend>
+        <div class="field">
+          <label for="pets">Do you have pets/animals? List type and number.</label>
+          <textarea id="pets" name="pets" placeholder="e.g. 1 dog (lab), 1 cat"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mandatory Screening Questions</legend>
+        <p class="inline-note">Answer for both Applicant and Co-Applicant (if any).</p>
+
+        <div class="screen-q">
+          <span class="q-label">Have you ever been evicted or been a defendant in an eviction action?</span>
+          <span class="radio-pair"><label><input type="radio" name="screen_evict_a" value="yes"> Applicant: Yes</label><label><input type="radio" name="screen_evict_a" value="no"> No</label></span>
+          <span class="radio-pair"><label><input type="radio" name="screen_evict_c" value="yes"> Co-Applicant: Yes</label><label><input type="radio" name="screen_evict_c" value="no"> No</label></span>
+        </div>
+        <div class="screen-q">
+          <span class="q-label">Have you ever filed, or are you in the process of filing, bankruptcy?</span>
+          <span class="radio-pair"><label><input type="radio" name="screen_bankruptcy_a" value="yes"> Applicant: Yes</label><label><input type="radio" name="screen_bankruptcy_a" value="no"> No</label></span>
+          <span class="radio-pair"><label><input type="radio" name="screen_bankruptcy_c" value="yes"> Co-Applicant: Yes</label><label><input type="radio" name="screen_bankruptcy_c" value="no"> No</label></span>
+        </div>
+        <div class="screen-q">
+          <span class="q-label">Do you owe any other landlords a balance?</span>
+          <span class="radio-pair"><label><input type="radio" name="screen_owed_a" value="yes"> Applicant: Yes</label><label><input type="radio" name="screen_owed_a" value="no"> No</label></span>
+          <span class="radio-pair"><label><input type="radio" name="screen_owed_c" value="yes"> Co-Applicant: Yes</label><label><input type="radio" name="screen_owed_c" value="no"> No</label></span>
+        </div>
+        <div class="screen-q">
+          <span class="q-label">Have you ever been asked to move for a lease violation of any kind?</span>
+          <span class="radio-pair"><label><input type="radio" name="screen_violation_a" value="yes"> Applicant: Yes</label><label><input type="radio" name="screen_violation_a" value="no"> No</label></span>
+          <span class="radio-pair"><label><input type="radio" name="screen_violation_c" value="yes"> Co-Applicant: Yes</label><label><input type="radio" name="screen_violation_c" value="no"> No</label></span>
+        </div>
+        <div class="screen-q">
+          <span class="q-label">Have you ever been convicted of a felony?</span>
+          <span class="radio-pair"><label><input type="radio" name="screen_felony_a" value="yes"> Applicant: Yes</label><label><input type="radio" name="screen_felony_a" value="no"> No</label></span>
+          <span class="radio-pair"><label><input type="radio" name="screen_felony_c" value="yes"> Co-Applicant: Yes</label><label><input type="radio" name="screen_felony_c" value="no"> No</label></span>
+        </div>
+        <div class="screen-q">
+          <span class="q-label">Have you ever been convicted of a major misdemeanor?</span>
+          <span class="radio-pair"><label><input type="radio" name="screen_misdemeanor_a" value="yes"> Applicant: Yes</label><label><input type="radio" name="screen_misdemeanor_a" value="no"> No</label></span>
+          <span class="radio-pair"><label><input type="radio" name="screen_misdemeanor_c" value="yes"> Co-Applicant: Yes</label><label><input type="radio" name="screen_misdemeanor_c" value="no"> No</label></span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Landlord / Mortgage References</legend>
+        <h3 style="margin:6px 0;">Present</h3>
+        <div class="field">
+          <label for="ll-now">Landlord or mortgage company</label>
+          <input id="ll-now" type="text" name="landlord_present">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="ll-now-phone">Telephone</label>
+            <input id="ll-now-phone" type="tel" name="landlord_present_phone">
+          </div>
+          <div class="field">
+            <label for="ll-now-rent">Monthly rent / mortgage</label>
+            <input id="ll-now-rent" type="text" name="landlord_present_rent" placeholder="$">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="ll-now-in">Date of move-in</label>
+            <input id="ll-now-in" type="date" name="landlord_present_movein">
+          </div>
+          <div class="field">
+            <label for="ll-now-out">Date of move-out</label>
+            <input id="ll-now-out" type="date" name="landlord_present_moveout">
+          </div>
+        </div>
+        <div class="field">
+          <label for="ll-now-reason">Reason for moving</label>
+          <input id="ll-now-reason" type="text" name="landlord_present_reason">
+        </div>
+
+        <h3 style="margin:18px 0 6px;">Previous</h3>
+        <div class="field">
+          <label for="ll-prev">Landlord or mortgage company</label>
+          <input id="ll-prev" type="text" name="landlord_previous">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="ll-prev-phone">Telephone</label>
+            <input id="ll-prev-phone" type="tel" name="landlord_previous_phone">
+          </div>
+          <div class="field">
+            <label for="ll-prev-rent">Monthly rent / mortgage</label>
+            <input id="ll-prev-rent" type="text" name="landlord_previous_rent" placeholder="$">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="ll-prev-in">Date of move-in</label>
+            <input id="ll-prev-in" type="date" name="landlord_previous_movein">
+          </div>
+          <div class="field">
+            <label for="ll-prev-out">Date of move-out</label>
+            <input id="ll-prev-out" type="date" name="landlord_previous_moveout">
+          </div>
+        </div>
+        <div class="field">
+          <label for="ll-prev-reason">Reason for moving</label>
+          <input id="ll-prev-reason" type="text" name="landlord_previous_reason">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Credit Obligations</legend>
+        <div class="field">
+          <label for="credit">List all credit obligations with minimum monthly payment</label>
+          <textarea id="credit" name="credit_obligations" placeholder="e.g. Car loan — $300/mo; Visa — $50/mo"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Personal References</legend>
+        <div class="field">
+          <label for="ref1-name">Reference 1 — name</label>
+          <input id="ref1-name" type="text" name="reference1_name">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="ref1-phone">Phone</label>
+            <input id="ref1-phone" type="tel" name="reference1_phone">
+          </div>
+          <div class="field">
+            <label for="ref1-addr">Address</label>
+            <input id="ref1-addr" type="text" name="reference1_address">
+          </div>
+        </div>
+        <div class="field">
+          <label for="ref2-name">Reference 2 — name</label>
+          <input id="ref2-name" type="text" name="reference2_name">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="ref2-phone">Phone</label>
+            <input id="ref2-phone" type="tel" name="reference2_phone">
+          </div>
+          <div class="field">
+            <label for="ref2-addr">Address</label>
+            <input id="ref2-addr" type="text" name="reference2_address">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Emergency Contact</legend>
+        <div class="field">
+          <label for="em-name">Name</label>
+          <input id="em-name" type="text" name="emergency_name">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="em-rel">Relationship</label>
+            <input id="em-rel" type="text" name="emergency_relationship">
+          </div>
+          <div class="field">
+            <label for="em-phone">Phone</label>
+            <input id="em-phone" type="tel" name="emergency_phone">
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="apply-actions">
+        <button class="btn" type="submit">Submit Application</button>
+      </div>
+      <p class="inline-note" style="margin-top:12px;">By submitting, you agree the information above is true. Bradley Homes &amp; Rentals will follow up by phone or email.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <p class="footer-name"><strong>Bradley Homes &amp; Rentals</strong></p>
+      <p>Local, family-owned. Serving Evart and the surrounding Central Michigan communities.</p>
+      <p class="footer-phone"><a href="tel:+12319206168">(231) 920-6168</a></p>
+      <p class="footer-email"><a href="mailto:wbradley58@sbcglobal.net">wbradley58@sbcglobal.net</a></p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Explore</p>
+      <ul class="footer-nav">
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="sale.html">Homes for Sale</a></li>
+        <li><a href="we-buy-houses.html">We Buy Houses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-h">Connect</p>
+      <p class="footer-social">
+        <a href="https://facebook.com/" target="_blank" rel="noopener" class="soc-link"><svg class="soc-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.5-3.91 3.78-3.91 1.1 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>Facebook</a>
+      </p>
+      <p class="footer-fair">Committed to fair housing. We do not discriminate on the basis of race, color, religion, sex, national origin, familial status, disability, or any other protected class.</p>
+    </div>
+  </div>
+  <p class="footer-copy">&copy; 2026 Bradley Homes &amp; Rentals. All rights reserved.</p>
+</footer>
+</body>
+</html>
